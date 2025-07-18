@@ -1,0 +1,29 @@
+{
+    "extends": "./node_modules/@cyberskill/shared/public/tsconfig.base.json",
+    "compilerOptions": {
+        "jsx": "react-native",
+        "baseUrl": ".",
+        "moduleResolution": "bundler",
+        "paths": {
+            "#app/*": [
+                "app/*"
+            ],
+            "#public/*": [
+                "public/*"
+            ],
+            "#shared/*": [
+                "shared/*"
+            ],
+            "#scripts/*": [
+                "scripts/*"
+            ]
+        },
+        "noEmit": true
+    },
+    "include": [
+        "**/*.ts",
+        "**/*.tsx",
+        ".expo/types/**/*.ts",
+        "expo-env.d.ts"
+    ]
+}
